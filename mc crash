@@ -1,0 +1,101 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 13/12/18 23:45
+Description: Rendering entity in world
+
+java.lang.NullPointerException: Rendering entity in world
+	at cys.a(SourceFile:58)
+	at cys.a(SourceFile:14)
+	at cyo.a(SourceFile:384)
+	at csh.a(SourceFile:55)
+	at csn.b(SourceFile:345)
+	at cty.b(SourceFile:996)
+	at cty.a(SourceFile:875)
+	at cty.a(SourceFile:749)
+	at cft.c(SourceFile:850)
+	at cft.a(SourceFile:395)
+	at net.minecraft.client.main.Main.main(SourceFile:144)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at cys.a(SourceFile:58)
+	at cys.a(SourceFile:14)
+
+-- Entity being rendered --
+Details:
+	Entity Type: minecraft:experience_orb (aex)
+	Entity ID: 41785
+	Entity Name: Orbe d'expérience
+	Entity's Exact location: -1697.50, 29.00, -1851.32
+	Entity's Block location: World: (-1698,29,-1852), Chunk: (at 14,1,4 in -107,-116; contains blocks -1712,0,-1856 to -1697,255,-1841), Region: (-4,-4; contains chunks -128,-128 to -97,-97, blocks -2048,0,-2048 to -1537,255,-1537)
+	Entity's Momentum: -0.18, 0.26, -0.07
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+
+-- Renderer details --
+Details:
+	Assigned renderer: cys@66f99dcc
+	Location: 2.92,-0.49,0.26 - World: (2,-1,0), Chunk: (at 2,-1,0 in 0,0; contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Rotation: 0.0
+	Delta: 0.3599956
+Stacktrace:
+	at cyo.a(SourceFile:384)
+	at csh.a(SourceFile:55)
+	at csn.b(SourceFile:345)
+	at cty.b(SourceFile:996)
+	at cty.a(SourceFile:875)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [ctj['crazytomtom'/41642, l='MpServer', x=-1700.47, y=29.50, z=-1851.59]]
+	Chunk stats: MultiplayerChunkCache: 289, 289
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: {}
+	Level spawn location: World: (27,63,0), Chunk: (at 11,3,0 in 1,0; contains blocks 16,0,0 to 31,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 31196559 game time, 11770849 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 50 total; [ctj['crazytomtom'/41642, l='MpServer', x=-1700.47, y=29.50, z=-1851.59], akf['Mouton'/41729, l='MpServer', x=-1656.04, y=67.00, z=-1894.73], akm['Loup'/41643, l='MpServer', x=-1703.70, y=29.00, z=-1850.70], akm['Loup'/41644, l='MpServer', x=-1699.70, y=29.18, z=-1851.92], akm['Loup'/41645, l='MpServer', x=-1699.70, y=29.18, z=-1852.63], akm['Loup'/41646, l='MpServer', x=-1699.70, y=29.20, z=-1850.54], akm['Loup'/41647, l='MpServer', x=-1699.70, y=29.22, z=-1851.22], ann['Squelette'/41649, l='MpServer', x=-1696.92, y=29.00, z=-1853.09], ann['Squelette'/41651, l='MpServer', x=-1709.72, y=47.00, z=-1843.53], akm['Loup'/41652, l='MpServer', x=-1711.70, y=42.00, z=-1870.79], akm['Loup'/41653, l='MpServer', x=-1708.39, y=39.00, z=-1871.69], akm['Loup'/41654, l='MpServer', x=-1708.03, y=38.50, z=-1870.77], ajl['Chauve-souris'/41655, l='MpServer', x=-1702.25, y=54.10, z=-1856.25], anq['Araignée'/41656, l='MpServer', x=-1721.30, y=44.40, z=-1839.72], ake['Saumon'/41657, l='MpServer', x=-1719.33, y=62.44, z=-1826.52], ake['Saumon'/41658, l='MpServer', x=-1721.66, y=60.05, z=-1834.07], ake['Saumon'/41659, l='MpServer', x=-1720.37, y=60.70, z=-1832.28], ake['Saumon'/41660, l='MpServer', x=-1726.22, y=60.00, z=-1831.85], ake['Saumon'/41661, l='MpServer', x=-1725.15, y=59.60, z=-1832.37], anw['Zombie'/41662, l='MpServer', x=-1681.81, y=58.00, z=-1869.49], ann['Squelette'/41663, l='MpServer', x=-1683.69, y=57.00, z=-1866.51], ajl['Chauve-souris'/41664, l='MpServer', x=-1684.27, y=58.15, z=-1862.85], ajl['Chauve-souris'/41665, l='MpServer', x=-1682.25, y=42.10, z=-1831.34], anq['Araignée'/41666, l='MpServer', x=-1727.30, y=51.03, z=-1876.70], ann['Squelette'/41667, l='MpServer', x=-1722.50, y=51.00, z=-1887.93], ann['Squelette'/41668, l='MpServer', x=-1722.40, y=51.00, z=-1879.40], amt['Creeper'/41669, l='MpServer', x=-1686.34, y=13.00, z=-1818.58], anq['Araignée'/41670, l='MpServer', x=-1685.50, y=48.00, z=-1808.50], ake['Saumon'/41677, l='MpServer', x=-1747.12, y=62.69, z=-1837.83], anq['Araignée'/41680, l='MpServer', x=-1661.50, y=64.00, z=-1867.50], amt['Creeper'/41682, l='MpServer', x=-1685.50, y=48.00, z=-1805.50], akq['Cheval'/41684, l='MpServer', x=-1658.51, y=70.00, z=-1822.11], akq['Cheval'/41685, l='MpServer', x=-1664.26, y=70.00, z=-1804.83], akf['Mouton'/41704, l='MpServer', x=-1654.47, y=64.00, z=-1888.08], akf['Mouton'/41705, l='MpServer', x=-1652.89, y=64.00, z=-1889.42], ajr['Poule'/41706, l='MpServer', x=-1654.64, y=64.00, z=-1889.64], akf['Mouton'/41707, l='MpServer', x=-1654.53, y=64.39, z=-1893.54], akf['Mouton'/41708, l='MpServer', x=-1656.93, y=64.00, z=-1888.45], akf['Mouton'/41709, l='MpServer', x=-1656.55, y=65.00, z=-1893.13], akf['Mouton'/41710, l='MpServer', x=-1655.46, y=66.00, z=-1893.78], akf['Mouton'/41712, l='MpServer', x=-1656.53, y=64.00, z=-1892.23], ajr['Poule'/41713, l='MpServer', x=-1656.80, y=67.00, z=-1895.23], ajt['Vache'/41715, l='MpServer', x=-1653.63, y=66.00, z=-1895.35], ajr['Poule'/41716, l='MpServer', x=-1653.42, y=64.00, z=-1890.18], akf['Mouton'/41717, l='MpServer', x=-1654.53, y=64.00, z=-1892.59], ajt['Vache'/41719, l='MpServer', x=-1654.71, y=67.00, z=-1895.54], ajt['Vache'/41721, l='MpServer', x=-1653.54, y=64.00, z=-1892.37], akf['Mouton'/41722, l='MpServer', x=-1652.89, y=64.00, z=-1894.21], ajt['Vache'/41723, l='MpServer', x=-1656.93, y=64.00, z=-1889.45], akf['Mouton'/41724, l='MpServer', x=-1653.92, y=64.00, z=-1889.12]]
+	Retry entities: 0 total; []
+	Server brand: Spigot
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at crg.a(SourceFile:418)
+	at cft.b(SourceFile:1815)
+	at cft.a(SourceFile:403)
+	at net.minecraft.client.main.Main.main(SourceFile:144)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.13.2
+	Operating System: Windows 8 (amd64) version 6.2
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1011693440 bytes (964 MB) / 1342177280 bytes (1280 MB) up to 2147483648 bytes (2048 MB)
+	JVM Flags: 9 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx2G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+	Launched Version: 1.13.2
+	LWJGL: 3.1.6 build 14
+	OpenGL: GeForce GTX 770M/PCIe/SSE2 GL version 4.6.0 NVIDIA 397.93, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Probably not. Jar signature remains and client brand is untouched.
+	Type: Client (map_client.txt)
+	Resource Packs: vanilla, file/John Smith Legacy 1.13.1 v6.zip
+	Current Language: Français (France)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i7-4700HQ CPU @ 2.40GHz
